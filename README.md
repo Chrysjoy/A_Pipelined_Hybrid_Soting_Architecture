@@ -1,17 +1,16 @@
 # **A Pipelined Hybrid Sorting Architecture (Verilog Implementation)**
 
 This repository contains a **Verilog HDL implementation** of a **pipelined hybrid sorting architecture**, inspired by two key hardware sorting components:
-          - **Bitonic Sorting Unit (BSU)**
-          - **Bidirectional Insertion Sorting Units (BISUs)**
+- **Bitonic Sorting Unit (BSU)**
+- **Bidirectional Insertion Sorting Units (BISUs)**
 The design is based on the reference work:
-    **"A Low-Cost Pipelined Architecture Based on a Hybrid Sorting Algorithm" — 
+    **"A Low-Cost Pipelined Architecture Based on a Hybrid Sorting Algorithm" - 
     Chen, Y.-R., Ho, C.-C., Chen, W.-T., & Chen, P.-Y. (2024), IEEE Transactions on Circuits and Systems I.**
 
 ## **Overview**
 The referenced work proposes an optimized pipelined sorting architecture that replaces the Existing **Bitonic Sorting Unit (BSU)** with an **Odd-Even Merge Sorting Unit (OEMU)** while retaining **Bidirectional Insertion Sorting Units (BISUs)** for fine-grained sorting.
 
 ## **Key Improvements Over Existing Designs**
-
 Compared to the existing BSU-based architecture, the proposed design achieves:
 
 - **3.68% reduction in area**  
@@ -39,9 +38,9 @@ This step produces **N/P sorted subsequences**.
 This stage improves throughput and latency while maintaining low hardware cost.
 
 ## **Repository Structure**
-- /src/ # Verilog RTL modules (BSU/OEMU, BISUs) with Architectural Diagrams
-- /testbench/ # Testbench files for simulation
-- /Simulation and Comparisons/ # Waveforms and comparison tables
+- src # Verilog RTL modules (BSU/OEMU, BISUs) with Architectural Diagrams
+- testbench # Testbench files for simulation
+- Simulation and Comparisons # Waveforms and comparison tables
 
 ## Tools Used
 - Verilog HDL
