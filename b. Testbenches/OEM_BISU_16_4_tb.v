@@ -5,7 +5,6 @@ reg [5:0] DI1,DI2,DI3,DI4;
 wire [5:0] DO1,DO2,DO3,DO4;
 wire ENout,Vout;
 
-
 OEM_BISU_16_4 bb1 (EN,DI1,DI2,DI3,DI4,INV,Vin,clk,rst1,rst2,rst3,rst4,rst5,rst6,rst7,rst8,ENout,Vout,DO1,DO2,DO3,DO4);
 always #50 clk = ~clk;
 
