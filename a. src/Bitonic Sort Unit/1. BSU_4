@@ -51,3 +51,11 @@ end
 mux2_1 m1 (x,y,sel,H);
 mux2_1 m2 (y,x,sel,L);
 endmodule
+
+// 2-to-1 multiplexer module
+module mux2_1 (d0,d1,s,d);
+	output [5:0]d;
+	input [5:0]d0, d1;
+	input s;
+	assign d = (s)? d1:d0;
+endmodule
