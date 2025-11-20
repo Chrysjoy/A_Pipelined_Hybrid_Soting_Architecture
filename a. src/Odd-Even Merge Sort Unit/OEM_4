@@ -1,0 +1,40 @@
+module OEM_4 (in1,in2,in3,in4,out1,out2,out3,out4);
+input [5:0] in1,in2,in3,in4;
+output [5:0] out1,out2,out3,out4;
+
+wire [5:0] a1,a2,a3,a4;
+wire [5:0] b2,b3;
+
+CULH C1 (in1,in2,a1,a2);
+CULH C2 (in3,in4,a3,a4);
+CULH C3 (a1,a3,out1,b3);
+CULH C4 (a2,a4,b2,out4);
+CULH C5 (b2,b3,out2,out3);
+endmodule
+
+module CULH (x,y,L,H);
+input [5:0]x,y;
+output [5:0]L,H;
+reg sel;
+
+always @(*) begin
+    if (x > y) begin
+        sel = 0;
+    end else if (x == y) begin
+        sel = 0;
+    end else begin
+        sel = 1;
+    end
+end
+
+mux2_1 m1 (y,x,sel,L);
+mux2_1 m2 (x,y,sel,H);
+endmodule 
+
+// 2-to-1 multiplexer module
+module mux2_1 (d0,d1,s,d);
+	output [5:0]d;
+	input [5:0]d0, d1;
+	input s;
+	assign d = (s)? d1:d0;
+endmodule
