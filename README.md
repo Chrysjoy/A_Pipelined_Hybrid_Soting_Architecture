@@ -46,7 +46,7 @@ This stage improves throughput and latency while maintaining low hardware cost.
 ## Tools Used
 - Verilog HDL
 - Cadence Incisive - Simulation
-- Cadence Genus – Synthesis (90nm)
+- Cadence Genus - Synthesis (90nm)
 
 ## Reference
  **"A Low-Cost Pipelined Architecture Based on a Hybrid Sorting Algorithm", Chen, Y.-R., et.al (2024), IEEE Transactions on Circuits and Systems I.**
