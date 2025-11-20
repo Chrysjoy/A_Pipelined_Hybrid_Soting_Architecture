@@ -39,9 +39,9 @@ This step produces **N/P sorted subsequences**.
 This stage improves throughput and latency while maintaining low hardware cost.
 
 ## **Repository Structure**
-- src # Verilog RTL modules (BSU/OEMU, BISUs) with Architectural Diagrams
-- testbench # Testbench files for simulation
-- Simulation and Comparisons # Waveforms and comparison tables
+- src - Verilog RTL modules (BSU/OEMU, BISUs) with Architectural Diagrams
+- testbench - Testbench files for simulation
+- Simulation and Comparisons - Waveforms and comparison tables
 
 ## Tools Used
 - Verilog HDL
