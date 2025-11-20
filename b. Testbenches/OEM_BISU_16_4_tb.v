@@ -1,4 +1,4 @@
-/* This test bench is for the whole architecture i.e. Odd-Even Merge Sort Unit with Bidirectional Imsertion Sort Unit. The number of DataIn is 16 (N) and it is divided into 4 (P) subsequences */
+/* This test bench is for the whole architecture i.e. Odd-Even Merge Sort Unit with Bidirectional Imsertion Sort Unit. The number of DataIn is 16 (N) and it is divided into subsequences of 4 (P) */
 module OEM_BISU_16_4_test;
 reg EN,INV,Vin,clk,rst1,rst2,rst3,rst4,rst5,rst6,rst7,rst8;
 reg [5:0] DI1,DI2,DI3,DI4;
