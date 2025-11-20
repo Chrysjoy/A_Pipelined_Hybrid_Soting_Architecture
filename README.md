@@ -3,7 +3,8 @@
 This repository contains a **Verilog HDL implementation** of a **pipelined hybrid sorting architecture**, inspired by two key hardware sorting components:
 - **Bitonic Sorting Unit (BSU)**
 - **Bidirectional Insertion Sorting Units (BISUs)**
-The design is based on the reference work:
+
+based on the reference work:
     **"A Low-Cost Pipelined Architecture Based on a Hybrid Sorting Algorithm" - 
     Chen, Y.-R., Ho, C.-C., Chen, W.-T., & Chen, P.-Y. (2024), IEEE Transactions on Circuits and Systems I.**
 
