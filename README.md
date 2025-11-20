@@ -20,7 +20,7 @@ Compared to the existing BSU-based architecture, the proposed design achieves:
 
 These enhancements make it suitable for **resource-constrained** and **performance-critical** applications.
 
-## 🔧 **Architecture Summary**
+## **Architecture Summary**
 
 ### **1. Initial Data Segmentation**
 The input sequence of length **N** is divided into subsequences of length **P**.
